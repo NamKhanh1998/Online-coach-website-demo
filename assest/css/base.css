@@ -1,0 +1,41 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Root */
+:root {
+    --header-height: 127px;
+
+    --primary-color: #57bbbf;
+    --header-text-color: #696969;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+/* responsive */
+
+.col2 {
+    padding: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+} 
+
+.row2 {
+    display: flex;
+    margin-left: -16px;
+    margin-right: -16px;
+}

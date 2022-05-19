@@ -1,0 +1,404 @@
+
+/* Header css*/
+.main {
+    overflow: hidden;
+}
+
+.header {
+    background-color: #eee;
+    height: var(--header-height);
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav {
+    height:var(--header-height)
+}
+
+.nav-heading {
+    text-align: center;
+    height: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-heading-name {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.nav-heading-desc {
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.nav-content {
+
+} 
+
+.nav-list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    padding: 22px;
+    color: var(--header-text-color);
+}
+
+.nav-item:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.nav-item:nth-child(7) {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item-logo {
+    margin-right: 12px;
+}
+
+/* Nav mobile */
+
+.nav-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    display: none;
+}
+
+.nav-mobile-bars-icon {
+    font-size: 3rem;
+    
+}
+
+.nav-mobile-menu {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 55px 30px 30px;
+    transform: translateX(100%);
+    opacity: 0.6;
+    transition: transform ease-in-out .5s;
+
+}
+
+.nav-mobile-close {
+    height: 30px;
+}
+
+.nav-mobile-close-icon {
+    font-size: 2.5rem;
+   float: right;
+   color: #3f3f3f;
+}
+
+#mobile-menu-control:checked ~.nav-mobile-menu {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.nav-mobile-menu__logIn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px 0; 
+}
+
+.nav-mobile-menu__logIn span {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.nav-mobile-menu__list {
+    list-style: none;
+}
+
+.nav-mobile-menu__item {
+    
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    width: 188px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-mobile-menu__link {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #6c6969;
+}
+
+
+/* content */
+.content {
+    max-height: 6000px;
+    padding-top: 80%;
+    background-repeat: repeat-y;
+    background-size:cover;
+    background-attachment: fixed;
+    background-image: url(https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80);
+}
+
+.content-heading {
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.content-desc {
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+}
+
+.content-title {
+    font-size: 13rem;
+    letter-spacing: 35px;
+}
+
+.content-desc2 {
+    font-size: 2.6rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.content-book__btn {
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    background-color: black;
+    padding: 10px 20px;
+    font-weight: 300;
+    cursor: pointer;
+    max-width: 140px;
+}
+
+.content-book__btn:hover {
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+}
+
+.content-introduce {
+    background-color: #fff;
+    height: 716px;
+    position: relative;
+}
+
+.content-introduce__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: calc((100% - 980px)/2);
+}
+
+.content-introduce__about button {
+    margin-top: 40px;
+}
+
+
+.content-introduce__desc {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-right: 35px;
+}
+
+.content-introduce-btn {
+
+}
+
+.content-introduce-img {
+    position: absolute;
+    right: 0;
+}
+
+.content-introduce-img2-wrap {
+    display: none;
+}
+
+.content-introduce-img2 {
+    width: 100%;
+}
+
+/* course */
+
+.course-wrap {
+    padding: 45px 0;
+}
+.course__heading {
+    font-size: 5rem;
+    line-height: 50px;
+    position: relative;
+}
+.course__heading::before {
+    content: "";
+    position: absolute;
+    border-top: 3px solid black;
+    width: 40px;
+    top: -20%;
+    left: 3px;
+}
+
+.course__heading-custom {
+    font-size: 3rem;
+}
+
+.course-item {
+    
+} 
+.course-item__wrap {
+    border: 6px solid black;
+    text-align: center;
+    
+}
+
+.course-item__info {
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    margin: 0 15px;
+}
+
+.course-item__name {
+    font-size: 3rem;
+    line-height: 30px;
+    margin-top: 50px;
+}
+.course-item__desc {
+    font-size: 1.4rem;
+}
+.course-item__price {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 26px;
+    margin-top: 25px;
+}
+
+.course-item__btn {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 7px 30px;
+    font-size: 1.6rem;
+    margin-top: 85px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.course-item__btn:hover {
+    opacity: 0.7;
+}
+.service-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.course__more-course-btn {
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 12px 15px;
+    margin: 30px 0;
+    
+}
+
+.course__more-course-btn:hover {
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    background-color: var(--primary-color);
+    padding: 60px 0 100px;
+}
+
+.contact__info {
+    font-size: 1.2rem;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.footer__policy {
+    margin-top: 50px;
+}
+
+.contact__social {
+
+}
+
+.contact__social-icon {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 1.6rem;
+    margin: 12px 0;
+}
+
+.form-input {
+    height: 35px;
+    border: 2px solid black;
+    background-color: var(--primary-color);
+}
+
+.form-input-mes {
+    height: 130px;
+    border: 2px solid black;
+    background-color: var(--primary-color);
+}
+
+.form__btn {
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 12px 30px;
+    margin-top: 30px;
+    width: 150px;
+    float: right;
+}
+
+.form__btn:hover {
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.footer-policy2 {
+    display: none;
+}
+

@@ -1,0 +1,116 @@
+/* Mobile & tablet */
+
+@media (max-width: 1023px) {
+    .header {
+        background-color: #fff;
+    }
+    .nav-content {
+        display: none;
+    }
+    .nav-heading {
+        align-items: flex-start;
+    }
+    .nav-mobile {
+        display: flex;
+    }
+    .content-title {
+        font-size: 7rem;
+        letter-spacing: 4px;
+    }
+    .content-desc  {
+        line-height: 30px;
+    }
+    .content-desc2 {
+        line-height: 30px;
+    } 
+
+    .content-introduce__about {
+        margin: 0;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+
+    .content-introduce {
+        height: unset;
+    }
+    .content-introduce-img {
+        display: none;
+    }
+    .content-introduce-img2-wrap {
+        display: block;
+    }
+    .course__heading{
+        margin-top: 0;
+    }
+    .course-wrap {
+        background-color: #fff;
+        padding-top: 35px;
+    }
+    .footer-policy2 {
+        display: block;
+        text-align: center;
+    }
+    .footer__policy1 {
+        display: none;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .content-title {
+        font-size: 13rem;
+        letter-spacing: 19px;
+    }   
+    .content-introduce {
+        top: 40%;
+        margin-top: 560px;
+    }
+    .course-item__name {
+        font-size: 1.5rem;
+    }
+    .nav-mobile-menu__list {
+        margin-top: 100px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .row.mb-gutter {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .row.mb-gutter .col{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-heading {
+        align-items: center;
+    }
+    .content-introduce {
+        margin-top: 590px;
+    }
+    .course-item {
+        margin-bottom: 20px;
+    }
+    .service-btn {
+        margin-top: 20px;
+    }
+    .nav-heading-name {
+        line-height: 25px;
+    }
+    .nav-mobile-menu__list {
+        margin-top: 60px;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .footer-form {
+        display: flex !important;
+    }
+}
